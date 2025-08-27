@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir python-telegram-bot
 COPY . .
 
 # Set environment variables
-ENV PYTHONPATH=/app/bot
+#ENV PYTHONPATH=/app/bot
 ENV PYTHONUNBUFFERED=1
 
 # Expose port
