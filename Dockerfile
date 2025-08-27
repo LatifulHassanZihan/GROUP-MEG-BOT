@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-WORKDIR /bot
+WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir python-telegram-bot
 COPY . .
 
 # Set environment variables
-ENV PYTHONPATH=/bot
+ENV PYTHONPATH=/app/bot
 ENV PYTHONUNBUFFERED=1
 
 # Expose port
