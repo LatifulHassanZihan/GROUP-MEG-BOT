@@ -1,0 +1,10 @@
+python-telegram-bot==20.7
+sqlite3
+asyncio
+datetime
+pytz
+schedule
+logging
+regex
+validators
+Flask
